@@ -27,3 +27,12 @@ margin-left: auto;
 margin-right: auto;
 -webkit-tap-highlight-color: transparent;
 margin-top: 2vh;}
+
+
+video {
+    width:90vw;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
