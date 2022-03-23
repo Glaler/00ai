@@ -39,3 +39,11 @@ video {
 h3 { color:white;
     font-size:4vh;
     text-align: center; }
+
+   iframe {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+        border-color: transparent;
+    }
