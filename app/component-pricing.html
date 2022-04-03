@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="content">
+            <h3 class="font-700">Carousel</h3>
+            <p>
+                Get more out of pricing tables by adding them in a carousel to save space and enjoy all your packages.
+            </p>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="content shadow-xl rounded-m mx-4">
+                            <h1 class="bg-blue-light pt-2 pb-3 mb-0 rounded-sm mb-n2 text-center font-14">CLASSIC</h1>
+                            <div class="bg-blue-dark p-4 text-center">
+                                <h1 class="font-40 color-white mb-n1">$59<sup class="font-24">99</sup></h1>
+                                <p class="color-white font-12">One Time Payment</p>
+                            </div>
+                            <div class="text-center pb-3">
+                                <p class="font-14 font-600 py-2 mb-0">Demo Files</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Free Install</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Product Guide</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Free Install</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Product Guide</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Lifetime Updates</p>
+                                <div class="divider"></div>
+                                <a href="#" class="btn btn-sm rounded-sm btn-center-m bg-highlight text-uppercase font-700">PURCHASE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="content shadow-xl mx-4">
+                            <div class="bg-green-dark p-4  mb-n3">
+                                <h3 class="font-600 color-white font-24">Mega Title</h3>
+                                <p class="color-white font-400 mt-n1 mb-3">One Time Payment</p>
+                            </div>
+                            <div class="p-2 bg-theme">
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-gift text-center icon-40 me-1 color-magenta-dark"></i>Demo Files</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-dollar-sign text-center icon-40 me-1 color-green-dark"></i>Free Install</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-sync text-center icon-40 me-1 color-red-dark"></i>Product Guide</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-gift text-center icon-40 me-1 color-magenta-dark"></i>Demo Files</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-gift text-center icon-40 me-1 color-magenta-dark"></i>Demo Files</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-dollar-sign text-center icon-40 me-1 color-green-dark"></i>Free Install</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-sync text-center icon-40 me-1 color-red-dark"></i>Product Guide</p>
+                                <div class="divider"></div>
+                                <a href="#" class="btn btn-sm rounded-s btn-full bg-green-dark text-uppercase font-700 mb-2">PURCHASE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="content shadow-xl rounded-m mx-4">
+                            <div class="p-4 text-center">
+                                <i class="fa fa-star color-yellow-dark fa-5x mb-4"></i>
+                                <h1 class="font-30 mb-n1 font-800">Pro Pack</h1>
+                                <p class="font-12 line-height-s">All the essential features <br> and email support</p>
+                            </div>
+                            <div class="text-center pb-3">
+                                <p class="font-14 font-600 py-2 mb-0">Demo Files</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Free Install</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Product Guide</p>
+                                <div class="divider mb-0"></div>
+                                <p class="font-14 font-600 py-2 mb-0">Lifetime Updates</p>
+                                <div class="divider"></div>
+                                <h1 class="font-40 mb-3">$59<sup class="font-24">99</sup></h1>
+                                <a href="#" class="btn btn-sm rounded-sm btn-center-m bg-highlight text-uppercase font-700 mb-3">PURCHASE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider divider-margins mt-n3"></div>
+
+        <p class="content mt-n2">
+            Pricing tables are awesome. We included 4 designs, that can have any color, any font size, and any icon in them. You can even add them in a slider.
+        </p>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content shadow-xl rounded-m mx-4">
+            <h1 class="bg-blue-light pt-2 pb-3 mb-0 rounded-sm mb-n2 text-center font-14">CLASSIC</h1>
+            <div class="bg-blue-dark p-4 text-center">
+                <h1 class="font-40 color-white mb-n1">$59<sup class="font-24">99</sup></h1>
+                <p class="color-white font-12">One Time Payment</p>
+            </div>
+            <div class="text-center">
+                <p class="font-14 font-600 py-2 mb-0">Demo Files</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0">Free Install</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0">Product Guide</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0">Lifetime Updates</p>
+                <div class="divider"></div>
+                <a href="#" class="btn btn-sm rounded-sm btn-center-m bg-highlight text-uppercase font-700 mb-3">PURCHASE</a>
+                <p class="font-10 font-500 text-italic">Discount for First 100 Customers</p>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content shadow-xl mx-4">
+            <div class="bg-green-dark p-4  mb-n3">
+                <h3 class="font-600 color-white font-24">Mega Title</h3>
+                <p class="color-white font-400 mt-n1 mb-3">One Time Payment</p>
+            </div>
+            <div class="p-2 bg-theme">
+                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-gift text-center icon-40 me-1 color-magenta-dark"></i>Demo Files</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-dollar-sign text-center icon-40 me-1 color-green-dark"></i>Free Install</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-sync text-center icon-40 me-1 color-red-dark"></i>Product Guide</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0"><i class="fa fa-thumbs-up text-center icon-40 me-1 color-blue-dark"></i>Lifetime Updates</p>
+                <div class="divider"></div>
+                <a href="#" class="btn btn-sm rounded-s btn-full bg-green-dark text-uppercase font-700 mb-2">PURCHASE</a>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content shadow-xl rounded-m mx-4 pb-4">
+            <div class="p-4 text-center">
+                <i class="fa fa-star color-yellow-dark fa-5x mb-4"></i>
+                <h1 class="font-30 mb-n1 font-800">Pro Pack</h1>
+                <p class="font-12 line-height-s">All the essential features <br> and email support</p>
+            </div>
+            <div class="text-center">
+                <p class="font-14 font-600 py-2 mb-0">Demo Files</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0">Free Install</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0">Product Guide</p>
+                <div class="divider mb-0"></div>
+                <p class="font-14 font-600 py-2 mb-0">Lifetime Updates</p>
+                <div class="divider"></div>
+                <h1 class="font-40 mb-3">$59<sup class="font-24">99</sup></h1>
+                <a href="#" class="btn btn-sm rounded-sm btn-center-m bg-highlight text-uppercase font-700 mb-3">PURCHASE</a>
+                <p class="font-10 font-500 text-italic">Discount for First 100 Customers</p>
+            </div>
+        </div>
+        <div class="divider divider-margins"></div>
+        
+
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

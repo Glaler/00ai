@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+                        
+
+        <p class="content">
+            Vibrate API is supported only by Android devices. You can add these to any type of buttons and links and they will work on both iOS and Android, but on Android they will also virbrate when tapped. 
+        </p>
+
+        <p class="bg-red-dark show-no-device content p-3 rounded-s shadow-xl">
+            This device doesn't support Virbate API. You can still use the buttons
+            just as regular buttons, but they will not trigger a Vibration when tapped.
+        </p>
+
+        <p class="bg-red-dark show-ios content p-3 rounded-s shadow-xl">
+            iOS doesn't support Virbate API. You can still use the buttons
+            just as regular buttons, but they will not trigger a Vibration when tapped.
+        </p>
+
+        <p class="bg-green-dark show-android  content p-3 rounded-s shadow-xl">
+            Android fully supports Vibrate API. The buttons below will also vibrate when you tap them! Enjoy the vibration show!
+        </p>
+
+        <div class="divider divider-margins"></div>
+
+        <div class="content mb-0">
+            <h5>Short Vibrations</h5>
+            <p>These are great for small and unobtrusive indications of a tap.</p>
+            <div class="row mb-2">
+                <div class="col-6">
+                    <a href="#" data-vibrate="5" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">5ms - Short</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-vibrate="10" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">10ms - Short </a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-6">
+                    <a href="#" data-vibrate="50" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800 ">50ms - Medium</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-vibrate="100" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">100ms - Medium </a>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-6">
+                    <a href="#" data-vibrate="250" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800 ">250ms - Long</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-vibrate="500" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">500ms - Long </a>
+                </div>
+            </div>
+        </div>     
+    
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h5>Custom Vibration Time</h5>
+            <p>You can set any vibration time you require, without the use of any custom code It's super simple!</p>
+            <div class="input-style no-borders no-icon validate-field mb-4">
+                <input type="number" class="vibrate-demo form-control validate-text" id="f3" placeholder="Enter time in Miliseconds">
+                <label for="f3" class="color-highlight">Enter time in Miliseconds</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>                
+            <div class="row mt-4">
+                <div class="col-6">
+                    <a href="#" class="start-vibrating btn btn-m btn-full shadow-s rounded-s text-uppercase font-800 bg-green-dark">Start</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="stop-vibrating btn btn-m btn-full shadow-s rounded-s text-uppercase font-800 bg-red-dark">Stop </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>  
+
+        <div class="divider divider-margins"></div>
+
+
+
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+  
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

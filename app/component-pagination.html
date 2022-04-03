@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        
+        <div class="content">
+            <h3 class="font-700">Highlight Pagination</h3>
+            <p>
+                Use the same color as the page for your paginations.
+            </p>
+        </div>
+
+        
+        <nav aria-label="pagination-demo">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link rounded-xs bg-highlight color-white border-0" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link rounded-xs bg-highlight color-white border-0" href="#">1</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-highlight color-white border-0" href="#">2</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-highlight color-white border-0" href="#">3</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-highlight color-white border-0" href="#">4</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-highlight color-white border-0" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link rounded-xs bg-highlight color-white border-0" href="#"><i class="fa fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </nav>     
+
+        <div class="divider divider-margins"></div>
+        
+           <div class="content">
+            <h3 class="font-700">Classic Pagination</h3>
+            <p>
+                The default , minimalist and well known pagination.
+            </p>
+        </div>
+
+        <nav aria-label="pagination-demo">
+            <ul class="pagination pagination- justify-content-center">
+                <li class="page-item">
+                    <a class="page-link color-black bg-transparent border-0" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link color-black border-0" href="#">1</a></li>
+                <li class="page-item"><a class="page-link color-black border-0" href="#">2</a></li>
+                <li class="page-item active"><a class="page-link color-black bg-highlight rounded-s border-0" href="#">3<span class="sr-only">(current)</span></a></li>
+                <li class="page-item"><a class="page-link color-black border-0" href="#">4</a></li>
+                <li class="page-item"><a class="page-link color-black border-0" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link rounded-xs color-black bg-transparent border-0" href="#"><i class="fa fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </nav>     
+
+        <div class="divider divider-margins"></div>
+
+        <div class="content">
+            <h3 class="font-700">Dark Pagination</h3>
+            <p>
+                When you're rocking an AMOLED and want to save power.
+            </p>
+        </div>
+
+        <nav aria-label="pagination-demo">
+            <ul class="pagination pagination- justify-content-center">
+                <li class="page-item">
+                    <a class="page-link rounded-xs color-white bg-dark-dark color-white shadow-xl border-0" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link rounded-xs bg-dark-dark color-white shadow-l border-0" href="#">1</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-dark-dark color-white shadow-l border-0" href="#">2</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-highlight color-white shadow-l border-0" href="#">3<span class="sr-only">(current)</span></a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-dark-dark color-white shadow-l border-0" href="#">4</a></li>
+                <li class="page-item"><a class="page-link rounded-xs bg-dark-dark color-white shadow-l border-0" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link rounded-xs color-white bg-dark-dark color-white shadow-l border-0" href="#"><i class="fa fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </nav>    
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Rounded as well</h3>
+            <p>
+                Any style you choose supports rounded versions as well.
+            </p>
+        </div>
+
+        <nav aria-label="pagination-demo">
+            <ul class="pagination pagination- justify-content-center">
+                <li class="page-item">
+                    <a class="page-link rounded-l color-white bg-gray-dark shadow-xl border-0" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link rounded-l color-white bg-red-dark shadow-xl border-0" href="#">1</a></li>
+                <li class="page-item"><a class="page-link rounded-l color-white bg-green-dark bg-transparent shadow-xl border-0" href="#">2</a></li>
+                <li class="page-item"><a class="page-link rounded-l color-white bg-blue-dark shadow-xl border-0" href="#">3<span class="sr-only">(current)</span></a></li>
+                <li class="page-item"><a class="page-link rounded-l color-white bg-yellow-dark bg-transparent shadow-xl border-0" href="#">4</a></li>
+                <li class="page-item"><a class="page-link rounded-l color-white bg-red-dark shadow-xl border-0" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link rounded-l color-white bg-gray-dark shadow-xl border-0" href="#"><i class="fa fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </nav>     
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+    
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

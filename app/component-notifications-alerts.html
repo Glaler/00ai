@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+                
+        
+        <div class="content mb-0">
+            <h3 class="font-700">Classic Alert Styled</h3>
+            <p>
+                These are default alerts you can use throught your page that work like regular web based alerts. Powered by Bootstrap.
+            </p>
+            <a href="component-notifications-mobile.html" class="btn btn-m rounded-s font-800 text-uppercase bg-blue-dark btn-full mb-3">Check out Mobile Styled Notifications</a>
+        </div>
+   
+        <div class="divider divider-margins"></div>
+
+        <div class="content">
+            <h3 class="font-700">Alert Small</h3>
+            <p>
+                Small alerts great for confirmations and more, can be used for a variety of purposes.            
+            </p>
+        </div>  
+
+        <div class="ms-3 me-3 alert alert-small rounded-s shadow-xl bg-yellow-dark" role="alert">
+            <span><i class="fa fa-exclamation-triangle color-white"></i></span>
+            <strong class="color-white">Please check back later!</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>    
+        <div class="ms-3 me-3 alert alert-small rounded-s shadow-xl bg-green-dark" role="alert">
+            <span><i class="fa fa-check color-white"></i></span>
+            <strong class="color-white">Everything's okay here!</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>    
+        <div class="ms-3 me-3 alert alert-small rounded-s shadow-xl bg-blue-dark" role="alert">
+            <span><i class="fa fa-cog color-white"></i></span>
+            <strong class="color-white">We're working on this</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="ms-3 me-3 mb-5 alert alert-small rounded-s shadow-xl bg-red-dark" role="alert">
+            <span><i class="fa fa-times color-white"></i></span>
+            <strong class="color-white">We have a problem here</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Alert Large</h3>
+            <p>
+                Large alerts great for confirmations and more, can be used for a variety of purposes.            
+            </p>
+        </div>  
+        
+        <div class="alert me-3 ms-3 rounded-s bg-yellow-dark" role="alert">
+            <span class="alert-icon color-white"><i class="fa fa-exclamation-triangle font-18"></i></span>
+            <h4 class="color-white font-">Warning</h4>
+            <strong class="alert-icon-text color-white">Something might go wrong.</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>    
+
+        <div class="alert me-3 ms-3 rounded-s bg-green-dark" role="alert">
+            <span class="alert-icon color-white"><i class="fa fa-check font-18"></i></span>
+            <h4 class="color-white">Success</h4>
+            <strong class="alert-icon-text color-white">Everything's okay here.</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>    
+
+        <div class="alert me-3 ms-3 rounded-s bg-blue-dark" role="alert">
+            <span class="alert-icon color-white"><i class="fa fa-cog font-18"></i></span>
+            <h4 class="color-white">Maintenance</h4>
+            <strong class="alert-icon-text color-white">We're working on this.</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>    
+
+        <div class="alert me-3 ms-3 rounded-s bg-red-dark " role="alert">
+            <span class="alert-icon color-white"><i class="fa fa-times-circle font-18"></i></span>
+            <h4 class="color-white">Error</h4>
+            <strong class="alert-icon-text color-white">We have a problem here.</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>       
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mt-4">
+            <h3 class="font-700">Tap or Programatic</h3>
+            <p class="mb-3">
+                We built notifications based on Boostrap toast system, so you can trigger them via a tap
+                or programatically by simply using the Boostrap classic code.
+            </p>
+            <code>
+                notificationToast.show();
+            </code>
+        </div>  
+    
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-3">
+            <h3 class="font-700">Modal Timed Info Alerts</h3>
+            <p>
+                Beautiful and small messages to inform your users an actions has sucessfully taken place!
+            </p>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="#" data-menu="timed-1">
+                    <i class="fa font-17 fa-check-circle color-green-dark"></i>
+                    <span>Success / Ok</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="timed-2">
+                    <i class="fa font-17 fa-times-circle color-red-dark"></i>
+                    <span>Failed / Error</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="timed-3">
+                    <i class="fa font-17 fa-shopping-bag color-brown-dark"></i>
+                    <span>Added to Cart</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="timed-4" class="border-0">
+                    <i class="fa font-17 fa-bookmark color-red-dark"></i>
+                    <span>Bookmarked</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>  
+        
+        <div class="divider divider-margins mt-n3"></div>
+
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+
+    <div id="timed-1" 
+         class="menu menu-box-modal rounded-0" 
+         data-menu-hide="1000"
+         data-menu-width="220"
+         data-menu-height="160">
+         <h1 class="text-center fa-5x mt-2 pt-3 pb-2"><i class="fa fa-check-circle color-green-dark"></i></h1>
+         <h2 class="text-center">Success</h2>
+    </div>
+    
+    <div id="timed-2" 
+         class="menu menu-box-modal rounded-0" 
+         data-menu-hide="1000"
+         data-menu-width="220"
+         data-menu-height="160">
+         <h1 class="text-center fa-5x mt-2 pt-3 pb-2"><i class="fa fa-times-circle color-red-dark"></i></h1>
+         <h2 class="text-center">Task Failed</h2>
+    </div>
+
+    <div id="timed-3" 
+         class="menu menu-box-modal rounded-0" 
+         data-menu-hide="1000"
+         data-menu-width="220"
+         data-menu-height="160">
+         <h1 class="text-center fa-5x mt-2 pt-3 pb-2"><i class="fa fa-shopping-bag color-brown-dark"></i></h1>
+         <h2 class="text-center">Added to Cart</h2>
+    </div>
+
+    <div id="timed-4" 
+         class="menu menu-box-modal rounded-0" 
+         data-menu-hide="1000"
+         data-menu-width="220"
+         data-menu-height="160">
+         <h1 class="text-center fa-5x mt-2 pt-3 pb-2"><i class="fa fa-bookmark color-red-dark"></i></h1>
+         <h2 class="text-center">Bookmarked</h2>
+    </div>
+
+    
+    <!-- Main Menu--> 
+    
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

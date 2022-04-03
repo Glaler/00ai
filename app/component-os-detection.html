@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="content">
+            <p>
+                It's easy to show content for Android or iOS. We've created a system to easily detect the mobile device that visits your site and automatically show content only for that device.
+            </p>    
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Show Cards</h3>
+            <p>
+                Depending on what devices visit, different cards will appear. Try this page from your mobile device.
+            </p>    
+        </div>
+        
+        <div data-card-height="231" class="card card-style bg-1 show-no-device">
+            <div class="card-center">
+                <h1 class="text-center mb-3"><i class="fa fa-2x fa-frown color-red-light"></i></h1>
+                <h1 class="text-center color-white bolder font-20 mb-1">No Mobile Detected</h1>
+                <p class="ps-5 pe-5 text-center color-white opacity-90 mb-0">
+                    Try visiting this page from your mobile device. At the moment you are viewing it from a computer. 
+                </p>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div> 
+
+        <div data-card-height="281" class="card card-style bg-2 show-ios">
+            <div class="card-center">
+                <h1 class="text-center mb-3"><i class="fab fa-2x fa-apple color-gray-dark"></i></h1>
+                <h1 class="text-center color-white bolder font-22">iOS Detected</h1>
+                <p class="text-center color-white opacity-90 bottom-25">
+                    Viewing from an iOS Device
+                </p>
+                <a href="#" class="btn btn-m rounded-xs btn-center-l bg-highlight text-uppercase font-900">Download from AppStore</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div> 
+
+        <div data-card-height="280" class="card card-style bg-3 show-android">
+            <div class="card-center">
+                <h1 class="text-center mb-3"><i class="fab fa-2x fa-android color-green-dark"></i></h1>
+                <h1 class="text-center color-white bolder font-22">Android Detected</h1>
+                <p class="text-center color-white opacity-90 bottom-25">
+                    Viewing from an iOS Device
+                </p>
+                <a href="#" class="btn btn-m rounded-xs btn-center-l bg-highlight text-uppercase font-900">Download from PlayStore</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div> 
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Show Button</h3>
+            <p>
+                You can show buttons, for example, to download an application, based on the device that is currently browsing.
+            </p>    
+        </div>
+        
+        <a href="#" class="show-no-device rounded-s btn btn-full btn-l btn-icon bg-blue-dark btn-margins font-800 text-uppercase text-start"><i class="fa fa-download text-center"></i>Download for your Computer</a>
+        <a href="#" class="show-ios rounded-s btn btn-full btn-l btn-icon bg-dark-light btn-margins font-800 text-uppercase text-start"><i class="fab fa-apple text-center"></i>Get from the AppStore</a>
+        <a href="#" class="show-android rounded-s btn btn-full btn-l btn-icon bg-green-dark btn-margins font-800 text-uppercase text-start"><i class="fab fa-android text-center"></i>Get from the PlayStore</a>
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Show Anything</h3>
+            <p>
+                Just use the classes <strong>show-android</strong> or <strong>show-ios</strong> on any element and this will 
+                make that element visible only on the designated operating syste,
+            </p>    
+        </div>
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+    
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

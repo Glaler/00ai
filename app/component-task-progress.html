@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear-medium">      
+        
+        <div class="content">
+            <h1>Task Completion</h1>
+            <p class="opacity-80 mb-3 font-11 mt-n2">You nearly achieved your visitor goal</p>
+            <div class="progress bg-gray-light" style="height:26px;">
+                <div class="progress-bar border-0 bg-black color-white text-start ps-2" 
+                     role="progressbar" style="width: 50%" 
+                     aria-valuenow="10" aria-valuemin="0" 
+                     aria-valuemax="100">
+                     50% Complete
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content">
+            <h1>Server Backup</h1>
+            <p class="opacity-80 mb-3 font-11 mt-n2">Backing up your Databases.</p>
+            <div class="progress rounded-xl bg-gray-light font-10" style="height:26px;">
+                <div class="progress-bar rounded-xl border-0 bg-red-dark color-white text-start ps-2" 
+                     role="progressbar" style="width: 30%" 
+                     aria-valuenow="10" aria-valuemin="0" 
+                     aria-valuemax="100">
+                     30%
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content">
+            <h1>Account Setup</h1>
+            <p class="opacity-80 mb-3 font-11 mt-n2">Please wait. We're getting things ready.</p>
+            <div class="progress bg-gray-light" style="height:8px;">
+                <div class="progress-bar border-0 bg-green-dark text-start ps-2" 
+                     role="progressbar" style="width: 50%" 
+                     aria-valuenow="10" aria-valuemin="0" 
+                     aria-valuemax="100">
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div data-card-height="150" class="card bg-17">
+            <div class="card-top pt-4 ms-3 me-3">
+                <h2 class="color-white font-600">Task Completion</h2>
+                <p class="mt-n2 color-white">You nearly achieved your visitor goal</p>
+            </div>
+            <div class="card-bottom ms-3 me-3 mb-4">
+                <div class="progress" style="height:26px;">
+                    <div class="progress-bar border-0 bg-theme color-theme text-start ps-2" 
+                         role="progressbar" style="width: 50%" 
+                         aria-valuenow="10" aria-valuemin="0" 
+                         aria-valuemax="100">
+                         50% Complete
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-blue-dark opacity-85"></div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div data-card-height="150" class="card bg-31">
+            <div class="card-top mt-3 ms-3 me-3">
+                <h3 class="color-white">Backup</h3>
+                <p class="color-white opacity-90">Backing up server now.<br> Please wait.</p>
+            </div>
+            <div class="card-bottom ms-3 me-3 mb-3">
+                <div class="progress rounded-xl" style="height:26px;">
+                    <div class="progress-bar rounded-xl border-0 bg-theme color-theme text-start ps-2" 
+                         role="progressbar" style="width: 30%" 
+                         aria-valuenow="10" aria-valuemin="0" 
+                         aria-valuemax="100">
+                         30%
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-green-dark opacity-90"></div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div data-card-height="100" class="card bg-16">
+            <div class="card-top mt-3 ms-3 me-3">
+                <h3 class="color-white">Setup</h3>
+                <p class="color-white opacity-80">Profile is almost setup.</p>
+            </div>
+            <div class="card-bottom ms-3 me-3 mb-3">
+                <div class="progress" style="height:8px;">
+                    <div class="progress-bar border-0 bg-green-dark text-start ps-2" 
+                         role="progressbar" style="width: 50%" 
+                         aria-valuenow="10" aria-valuemin="0" 
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+    
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

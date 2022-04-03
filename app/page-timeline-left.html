@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-pages" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear-medium">                
+
+        
+        <div class="timeline-body-left">
+            <div class="timeline-deco"></div>
+                                
+            <div class="timeline-item">
+                <i class="fa fa-heart bg-red-dark shadow-l timeline-icon"></i>
+                <div class="timeline-item-content shadow-l">
+                    <h3 class="font-700">Bars Mobile</h3>
+                    <p class="font-10 mt-n2 mb-2 opacity-70">January 15th, 2025</p>
+                    <p class="mb-0">
+                        We've added the newest and hottest features to Bars including Bootstrap and PWA support. Now Bars is better than ever.
+                    </p>
+                </div>
+            </div>					
+
+            <div class="timeline-item mt-4">
+                <i class="fa fa-camera bg-green-dark timeline-icon"></i>
+                <div class="timeline-item-content shadow-l">
+                    <h3 class="font-700">Galleries</h3>
+                    <p class="font-10 mt-n2 mb-2 opacity-70 mb-3">February 15th, 2025</p>
+                    <div class="row">
+                        <a href="images/pictures/1t.jpg" data-gallery="gallery-1" class="col-4" title="Cream Pie" data-category="1">
+                            <img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid mb-3 rounded-s shadow-m" alt="Picture Description">
+                        </a>
+                        <a href="images/pictures/9t.jpg" data-gallery="gallery-1" class="col-4" title="Pots and Recipes" data-category="3">
+                            <img src="images/empty.png" data-src="images/pictures/9t.jpg" class="preload-img img-fluid mb-3 rounded-s shadow-m" alt="Picture Description">
+                        </a>
+                        <a href="images/pictures/2t.jpg" data-gallery="gallery-1" class="col-4" title="Pots and Recipes" data-category="2">
+                            <img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid mb-3 rounded-s shadow-m" alt="Picture Description">
+                        </a>							
+                        <a href="images/pictures/6t.jpg" data-gallery="gallery-2" class="col-4" title="Typeweritter and Vynil" data-category="1">
+                            <img src="images/empty.png" data-src="images/pictures/6s.jpg" class="preload-img img-fluid mb-3 rounded-s shadow-m" alt="Picture Description">
+                        </a>
+                        <a href="images/pictures/8t.jpg" data-gallery="gallery-2" class="col-4" title="Beautiful Camera" data-category="3">
+                            <img src="images/empty.png" data-src="images/pictures/8t.jpg" class="preload-img img-fluid mb-3 rounded-s shadow-m" alt="Picture Description">
+                        </a>
+                        <a href="images/pictures/1t.jpg" data-gallery="gallery-3" class="col-4" title="Cookies and Flowers" data-category="2">
+                            <img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid mb-3 rounded-s shadow-m" alt="Picture Description">
+                        </a>
+                    </div>
+
+                    <p class="mb-0 mt-n4">
+                        Use <strong class="color-theme">@iEnabled</strong> to create the best <strong class="color-highlight">#MobilePWA's</strong> out there. 
+                    </p>
+                </div>
+            </div>	
+
+            
+            <div class="timeline-item mt-4">
+                <i class="fab fa-youtube bg-red-dark timeline-icon"></i>
+                <div class="timeline-item-content shadow-l">
+                    <h3 class="font-700">YouTube</h3>
+                    <p class="font-10 mt-n2 mb-2 opacity-70">February 15th, 2025</p>
+                    <div class="responsive-iframe">
+                        <iframe src='https://www.youtube.com/embed/c9MnSeYYtYY' frameborder='0' allowfullscreen></iframe>
+                    </div>
+                    <p class="mb-0">
+                        Use <strong class="color-theme">@iEnabled</strong> to create the best <strong class="color-highlight">#MobilePWA's</strong> out there. 
+                    </p>
+                </div>
+            </div>	
+
+
+            <div class="timeline-item">
+                <i class="fa fa-cog bg-blue-dark shadow-l timeline-icon"></i>
+                <div class="timeline-item-content-full shadow-l">
+                    <img src="images/pictures/1w.jpg" alt="img" class="img-fluid">
+                    <div class="content mb-3">
+                        <h3 class="font-700">Component and Bootstrap 4.x</h3>
+                        <p class="font-10 mt-n2 mb-2 opacity-70">February 15th, 2025</p>
+                        <p class="pb-4">
+                            We've added the newest and hottest features to Bars including Bootstrap and PWA support.
+                        </p>
+                    </div>
+                </div>
+            </div>		
+            
+            <div class="timeline-item mt-4">
+                <i class="fab fa-twitter bg-twitter timeline-icon"></i>
+                <div class="timeline-item-content shadow-l">
+                    <h3 class="font-700">Tags and Links</h3>
+                    <p class="font-10 mt-n2 mb-2 opacity-70">February 15th, 2025</p>
+                    <p class="mb-0">
+                        Use <strong class="color-theme">@iEnabled</strong> to create the best <strong class="color-highlight">#MobilePWA's</strong> out there. 
+                    </p>
+                </div>
+            </div>	
+
+
+        </div>			
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
