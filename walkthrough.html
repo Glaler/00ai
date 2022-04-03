@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+        
+    <div class="page-content">                
+        
+        <div class="card bg-4 mb-0" data-card-height="cover-full">
+            <div class="card-center mx-3">
+                <div class="shadow-xl rounded-sm bg-theme">
+                    <div class="card rounded-0 bg-3 mb-0" data-card-height="250" style="border-top-left-radius: 10px!important; border-top-right-radius: 10px!important;">
+                        <div class="card-bottom px-3">
+                            <h1 class="mt-2 mb-n1 font-800 font-27 mb-n2">Welcome</h1>
+                            <p class="mb-2 font-12 opacity-60">Please enter your credentials below.</p>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-1 pt-3">
+                        <div class="input-style no-borders has-icon validate-field mb-4">
+                            <i class="fa fa-at"></i>
+                            <input type="email" class="form-control validate-email" id="form1ac" placeholder="Email">
+                            <label for="form1ac" class="color-highlight font-11 font-500">Email</label>
+                            <i class="fa fa-times disabled invalid color-red-dark"></i>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <em>(required)</em>
+                        </div>
+                        <div class="input-style no-borders has-icon validate-field mb-4">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" class="form-control validate-password" id="form1ad" placeholder="Password">
+                            <label for="form1ad" class="color-highlight font-11 font-500">Password</label>
+                            <i class="fa fa-times disabled invalid color-red-dark"></i>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <em>(required)</em>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><a href="#" data-menu="menu-signup" class="text-start d-block color-theme opacity-50 font-10">Create Account</a></div>
+                            <div class="col-6"><a href="#" data-menu="menu-forgot" class="text-end d-block color-theme opacity-50 font-10">Forgot Credentials</a></div>
+                        </div>
+                        <a href="index.html" class="btn btn-full btn-m rounded-s bg-green-dark font-700 text-uppercase mb-3 mt-4">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+        
+    </div>
+    <!-- Page content ends here-->
+       
+    <!--------------->
+    <!--------------->
+    <!--Menu Forgot-->
+    <!--------------->
+    <!--------------->
+    <div id="menu-forgot" 
+         class="menu menu-box-modal rounded-sm" 
+         data-menu-height="205"
+         data-menu-width="320">
+        <div class="menu-title">
+            <h1 class="my-0 py-0">Reset Password</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+
+        <div class="content mt-0 mb-0">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-at"></i>
+                <input type="email" class="form-control validate-email" id="form1ad" placeholder="Email">
+                <label for="form1ad" class="color-highlight font-11 font-500">Email</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <a href="#" class="close-menu btn btn-full btn-m shadow-l rounded-s bg-highlight font-600 mt-4">SEND RECOVERY EMAIL</a>
+        </div>
+    </div>     
+           
+        
+    <!---------------->
+    <!---------------->
+    <!--Menu Sign Up-->
+    <!---------------->
+    <!---------------->
+    <div id="menu-signup" 
+         class="menu menu-box-modal rounded-sm" 
+         data-menu-height="340"
+         data-menu-width="320">
+        <div class="menu-title">
+            <h1 class="my-0 py-0">Register</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mb-0 mt-0">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-user"></i>
+                <input type="name" class="form-control validate-name" id="form1acd" placeholder="Name">
+                <label for="form1acd" class="color-highlight font-11 font-500">Name</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-at"></i>
+                <input type="email" class="form-control validate-email" id="form1ace" placeholder="Email">
+                <label for="form1ace" class="color-highlight font-11 font-500">Email</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control validate-password" id="form1adf" placeholder="Password">
+                <label for="form1adf" class="color-highlight font-11 font-500">Password</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <a href="#" class="close-menu btn btn-full btn-m shadow-l rounded-s font-700 bg-blue-dark mt-4 text-uppercase">Register</a>
+        </div>
+    </div>    
+    
+    <!-- Be sure this is on your main visiting page, for example, the index.html page-->
+    <!-- Install Prompt for Android -->
+    <div id="menu-install-pwa-android" class="menu menu-box-modal"
+        data-menu-height="375" 
+        data-menu-width="320" 
+        data-menu-effect="menu-parallax">
+        <img class="mx-auto mt-4 rounded-m" src="app/icons/icon-128x128.png" alt="img" width="90">
+        <h4 class="text-center mt-4 mb-2">Bars on your Home Screen</h4>
+        <p class="text-center boxed-text-xl">
+            Install Bars on your home screen, and access it just like a regular app. It really is that simple!
+        </p>
+        <div class="boxed-text-l">
+            <a href="#" class="pwa-install mx-auto btn btn-m font-700 bg-highlight text-uppercase">Add to Home Screen</a>
+            <a href="#" class="pwa-dismiss close-menu btn-full mt-3 pt-2 text-center text-uppercase font-600 color-red-light font-12">Maybe later</a>
+        </div>
+    </div>   
+
+    <!-- Install instructions for iOS -->
+    <div id="menu-install-pwa-ios" 
+        class="menu menu-box-modal"
+        data-menu-height="330" 
+        data-menu-width="320" 
+        data-menu-effect="menu-parallax">
+        <div class="boxed-text-xl top-25">
+            <img class="mx-auto mt-4 rounded-m" src="app/icons/icon-128x128.png" alt="img" width="90">
+            <h4 class="text-center mt-4 mb-2">Bars on your Home Screen</h4>
+            <p class="text-center ms-3 me-3 mb-2 pb-2">
+                Install Bars on your home screen, and access it just like a regular app. Open your Safari menu and tap "Add to Home Screen".
+            </p>
+            <a href="#" class="pwa-dismiss close-menu btn-full mt-3 text-center text-uppercase font-900 color-red-light opacity-90 font-110">Maybe later</a>
+        </div>
+    </div>   
+
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

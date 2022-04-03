@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-media" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div href="#" class="card bg-1 mb-0" data-card-height="400">
+            <div class="card-bottom px-3">
+                <h1 class="font-30 color-white font-700">Project Title</h1>
+                <p class="color-white mt-n2">
+                    Fast Loading and Absolutely Awesome
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient-overlay"></div>
+        </div>        
+        <div class="content">
+            <h3 class="font-700">Project Title 1</h3>
+            <p>
+                A small description about your project goes here. Then, you can access the portfolio project to see it in detail.
+            </p>
+            <span class="color-theme font-10 d-block text-uppercase font-700">Share this project</span>
+            <a href="auto_generated" class="default-link shareToFacebook icon icon-xs bg-facebook text-uppercase font-800 rounded-sm"><i class="fab fa-facebook-f"></i></a>
+            <a href="auto_generated" class="default-link shareToTwitter icon icon-xs bg-twitter text-uppercase font-800 rounded-sm"><i class="fab fa-twitter"></i></a>
+            <a href="auto_generated" class="default-link shareToWhatsApp icon icon-xs bg-whatsapp text-uppercase font-800 rounded-sm"><i class="fab fa-whatsapp"></i></a>
+            <a href="auto_generated" class="default-link shareToPinterest icon icon-xs bg-pinterest text-uppercase font-800 rounded-sm"><i class="fab fa-pinterest-p"></i></a>
+            <a href="auto_generated" class="default-link shareToMail icon icon-xs bg-mail text-uppercase font-800 rounded-sm"><i class="fa fa-envelope"></i></a>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h4 class="font-700">This is an Image Gallery</h4>
+            <p>
+                This page is not WordPress, it's an HTML website. Yes, that's right. but you can convert it to WordPress yourself or hire an expert from Envato Studio.
+            </p>
+            <div class="row text-center row-cols-3 mb-n5">
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Pots and Pans">
+                    <img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <h5 class="font-14 pt-2">Little Dress</h5>
+                </a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/6t.jpg" title="Berries are Packed with Fiber">
+                    <img src="images/empty.png" data-src="images/pictures/6s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <h5 class="font-14 pt-2">Fish soup</h5>
+                </a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="A beautiful Retro Camera">
+                    <img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <h5 class="font-14 pt-2">Pasta Time</h5>
+                </a>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Contrasts</h3>
+            <p>
+                Let's say you have a very light text on a dark background. Here is where contrasts are perfect.
+            </p>
+            <p class="opacity-90 mb-0">I'm set to 90% opacity.</p>
+            <p class="opacity-80 mb-0">I'm set to 80% opacity.</p>
+            <p class="opacity-70 mb-0">I'm set to 70% opacity.</p>
+            <p class="opacity-60 mb-0">I'm set to 60% opacity.</p>
+            <p class="opacity-50 mb-0">I'm set to 50% opacity.</p>
+            <p class="opacity-40 mb-0">I'm set to 40% opacity.</p>
+            <p class="opacity-30 mb-0">I'm set to 30% opacity.</p>
+            <p class="opacity-20 mb-0">I'm set to 20% opacity.</p>
+            <p class="opacity-10 mb-1">I'm set to 10% opacity.</p>
+        </div>  
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h3 class="font-700">Font Weights</h3>
+            <p>
+                Select the thickness of your font with ease. Add a secondary class that will change weights.
+            </p>
+            <p class="font-900 mb-0">This text is set to 900 weight.</p>
+            <p class="font-800 mb-0">This text is set to 800 weight.</p>
+            <p class="font-700 mb-0">This text is set to 700 weight.</p>
+            <p class="font-600 mb-0">This text is set to 600 weight.</p>
+            <p class="font-500 mb-0">This text is set to 500 weight.</p>
+            <p class="font-400 mb-0">This text is set to 400 weight.</p>
+            <p class="font-300 mb-0">This text is set to 300 weight.</p>
+            <p class="font-200 mb-0">This text is set to 200 weight.</p>
+        </div>
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <h3 class="font-700">Lists</h3>
+            <p>
+                Select the thickness of your font with ease. Add a secondary class that will change weights.
+            </p>
+            <div class="row mb-0">
+                <div class="col-4">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i>List</li>
+                        <li><i class="fa fa-star color-yellow-dark"></i>List</li>
+                        <li><i class="fa fa-heart color-red-dark"></i>List</li>
+                        <li><i class="fa fa-circle color-magenta-dark"></i>List</li>
+                        <li><i class="fa fa-square color-pink-light"></i>List</li>
+                    </ul> 
+                </div>      
+                <div class="col-4">
+                    <ul>
+                        <li>List</li>
+                        <li>List</li>
+                        <li>List</li>
+                        <li>List</li>
+                        <li>List</li>
+                    </ul>    
+                </div>
+                <div class="col-4">    
+                <ol>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <h3 class="font-700">Highlights</h3>
+            <p class="pb-2">Showcase the most important part of a paragraph with highlights. Easy and awesome!</p>
+            <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-blue-dark">this part</mark> of the text.</p>
+            <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-red-dark">this part</mark> of the text.</p>
+            <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-yellow-dark">this part</mark> of the text.</p>
+            <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-green-dark">this part</mark> of the text.</p>
+            <p class="mb-4">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-magenta-dark">this part</mark> of the text.</p>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

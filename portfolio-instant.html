@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-media" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+                    
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <h3 class="font-700">Grid</h3>
+            <p>
+                Instant article list, can be used together with instant articles or as a product or content list.
+            </p>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" data-menu="instant-left">
+                        <div>
+                            <img src="images/pictures/9.jpg" class="img-fluid">
+                        </div>
+                        <div class="pt-1">
+                            <h4>Left Article</h4>
+                            <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                            <p class="mb-4">
+                                This article will slide in from the Left.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" data-menu="instant-right">
+                        <div>
+                            <img src="images/pictures/7.jpg" class="img-fluid">
+                        </div>
+                        <div class="pt-1">
+                            <h4>Right Article</h4>
+                            <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                            <p class="mb-4">
+                                This article will slide in from the Right.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-menu="instant-top">
+                        <div>
+                            <img src="images/pictures/10.jpg" class="img-fluid">
+                        </div>
+                        <div class="pt-1">
+                            <h4>Top Article</h4>
+                            <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                            <p class="mb-4">
+                                This article will slide in from the Top.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" data-menu="instant-bottom">
+                        <div>
+                            <img src="images/pictures/1.jpg" class="img-fluid">
+                        </div>
+                        <div class="pt-1">
+                            <h4>Bottom Article</h4>
+                            <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                            <p class="mb-4">
+                                This article will slide in from the Bottom.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            
+            <h3 class="font-700">List</h3>
+            <p>
+                Instant article list, can be used together with instant articles or as a product or content list.
+            </p>
+            
+            <a href="#" data-menu="instant-left" class="d-flex mb-4">
+                <div>
+                    <img src="images/pictures/9.jpg" width="130" class="shadow-xl me-3">
+                </div>
+                <div class="pt-1">
+                    <h4>Left Article</h4>
+                        <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                    <p>
+                        This article will slide in from the Left.
+                    </p>
+                </div>
+            </a>
+            <a href="#" data-menu="instant-right" class="d-flex mb-4">
+                <div>
+                    <img src="images/pictures/7.jpg" width="130" class="shadow-xl me-3">
+                </div>
+                <div class="pt-1">
+                    <h4>Right Article</h4>
+                    <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                    <p>
+                        This article will slide in from the Right.
+                    </p>
+                </div>
+            </a>
+            <a href="#" data-menu="instant-top" class="d-flex mb-4">
+                <div>
+                    <img src="images/pictures/10.jpg" width="130" class="shadow-xl me-3">
+                </div>
+                <div class="pt-1">
+                    <h4>Top Article</h4>
+                    <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                    <p>
+                        This article will slide in from the Top.
+                    </p>
+                </div>
+            </a>
+            <a href="#" data-menu="instant-bottom" class="d-flex mb-4">
+                <div>
+                    <img src="images/pictures/3.jpg" width="130" class="shadow-xl me-3">
+                </div>
+                <div class="pt-1">
+                    <h4>Bottom Article</h4>
+                    <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                    <p>
+                        This article will slide in from the Bottom.
+                    </p>
+                </div>
+            </a>
+            <a href="#" data-menu="instant-modal" class="d-flex mb-4">
+                <div>
+                    <img src="images/pictures/1.jpg" width="130" class="shadow-xl me-3">
+                </div>
+                <div class="pt-1">
+                    <h4>Modal Article</h4>
+                    <p class="color-highlight mt-n2 mb-1 font-11">Just tap to Activate</p>
+                    <p>
+                        This article will show up from the middle.
+                    </p>
+                </div>
+            </a>
+        </div>
+                
+        <div class="divider divider-margins"></div>
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+    <div id="instant-left" 
+         class="menu menu-box-left menu-box-bottom-full rounded-0" 
+         data-menu-height="cover"
+         data-menu-width="cover">
+        
+        <div class="card notch-clear rounded-0 bg-9" data-card-height="300">
+            <div class="card-top pt-4 ps-3 pe-3">
+                <a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme"><i class="fa fa-arrow-left"></i></a>
+            </div>
+            <div class="card-bottom ps-3 pe-3">
+                <h1 class="color-white mb-0">Left Card</h1>
+                <p class="color-white opacity-50">
+                    This article will deploy from the left. You can deploy articles from any part of the page you want.
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient-overlay"></div>
+        </div>
+        
+        <div class="content">
+            <h4>I slide in from the Left </h4>
+            <p>It's difficult to design an article card that looks great on Mobile, not anymore. Asterial comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+            <div class="row text-center row-cols-3 mb-0">
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+            </div>
+
+            <h4>Instantly Open Articles</h4>
+            <p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+        </div>
+        <a href="#" class="close-menu btn btn-l rounded-sm font-800 text-uppercase btn-full btn-margins bg-highlight">Close Article</a>     
+    </div>
+    
+    <div id="instant-right" 
+         class="menu menu-box-right menu-box-bottom-full rounded-0" 
+         data-menu-height="cover"
+         data-menu-width="cover">
+        
+        <div class="card notch-clear rounded-0 bg-7" data-card-height="300">
+            <div class="card-top pt-4 ps-3 pe-3">
+                <a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme float-end"><i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="card-bottom ps-3 pe-3">
+                <h1 class="color-white mb-0">Right Card</h1>
+                <p class="color-white opacity-50">
+                    This article will deploy from the right. You can deploy articles from any part of the page you want.
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient-overlay"></div>
+        </div>
+        
+        <div class="content">
+            <h4>I slide in from the Right </h4>
+            <p>It's difficult to design an article card that looks great on Mobile, not anymore. Asterial comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+            <div class="row text-center row-cols-3 mb-0">
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+            </div>
+
+            <h4>Instantly Open Articles</h4>
+            <p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+        </div>
+        <a href="#" class="close-menu btn btn-l rounded-sm font-800 text-uppercase btn-full btn-margins bg-highlight">Close Article</a>     
+    </div>
+
+    <div id="instant-top" 
+         class="menu menu-box-top menu-box-bottom-full rounded-0" 
+         data-menu-height="cover"
+         data-menu-width="cover">
+        
+        <div class="card notch-clear rounded-0 bg-10" data-card-height="300">
+            <div class="card-top pt-4 ps-3 pe-3">
+                <a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme float-end"><i class="fa fa-arrow-up"></i></a>
+            </div>
+            <div class="card-bottom ps-3 pe-3">
+                <h1 class="color-white mb-0">Top Card</h1>
+                <p class="color-white opacity-50">
+                    This article will deploy from the top. You can deploy articles from any part of the page you want.
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient-overlay"></div>
+        </div>
+        
+        <div class="content">
+            <h4>I slide in from the Top </h4>
+            <p>It's difficult to design an article card that looks great on Mobile, not anymore. Asterial comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+            <div class="row text-center row-cols-3 mb-0">
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+            </div>
+
+            <h4>Instantly Open Articles</h4>
+            <p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+        </div>
+        <a href="#" class="close-menu btn btn-l rounded-sm font-800 text-uppercase btn-full btn-margins bg-highlight">Close Article</a>     
+    </div>
+    
+    
+    <div id="instant-bottom" 
+         class="menu menu-box-bottom menu-box-bottom-full rounded-0" 
+         data-menu-height="cover"
+         data-menu-width="cover">
+        
+        <div class="card notch-clear rounded-0 bg-10" data-card-height="300">
+            <div class="card-top pt-4 ps-3 pe-3">
+                <a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme"><i class="fa fa-arrow-down"></i></a>
+            </div>
+            <div class="card-bottom ps-3 pe-3">
+                <h1 class="color-white mb-0">Bottom Card</h1>
+                <p class="color-white opacity-50">
+                    This article will deploy from the top. You can deploy articles from any part of the page you want.
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient-overlay"></div>
+        </div>
+        
+        <div class="content">
+            <h4>I slide in from the Bottom </h4>
+            <p>It's difficult to design an article card that looks great on Mobile, not anymore. Asterial comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+            <div class="row text-center row-cols-3 mb-0">
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+            </div>
+
+            <h4>Instantly Open Articles</h4>
+            <p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+        </div>
+        <a href="#" class="close-menu btn btn-l rounded-sm font-800 text-uppercase btn-full btn-margins bg-highlight">Close Article</a>     
+    </div>
+
+    <div id="instant-modal" 
+         class="menu menu-box-modal menu-box-bottom-full rounded-0" 
+         data-menu-height="cover"
+         data-menu-width="cover">
+        
+        <div class="card notch-clear rounded-0 bg-1" data-card-height="300">
+            <div class="card-top pt-4 ps-3 pe-3">
+                <a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme"><i class="fa fa-arrow-down"></i></a>
+            </div>
+            <div class="card-bottom ps-3 pe-3">
+                <h1 class="color-white mb-0">Modal Card</h1>
+                <p class="color-white opacity-50">
+                    This article will deploy as a modal. You can deploy articles from any part of the page you want.
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient-overlay"></div>
+        </div>
+        
+        <div class="content">
+            <h4>I show like a modal! </h4>
+            <p>It's difficult to design an article card that looks great on Mobile, not anymore. Asterial comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+            <div class="row text-center row-cols-3 mb-0">
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+                <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+            </div>
+
+            <h4>Instantly Open Articles</h4>
+            <p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+        </div>
+        <a href="#" class="close-menu btn btn-l rounded-sm font-800 text-uppercase btn-full btn-margins bg-highlight">Close Article</a>     
+    </div>
+
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
