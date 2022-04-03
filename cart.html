@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Contact us</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"/>
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"/>
     <link rel="shortcut icon" type="image/png" href="./assets/images/fav.png"/>
@@ -88,43 +88,131 @@
             <div class="breadcrumb">
               <ul>
                 <li><a href="index.html"> <i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li class="active"><a href="#">Contact us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="active"><a href="#">Cart</a></li>
               </ul>
             </div>
-        <div class="contact-us">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="contact-us__info">
-                <h3 class="contact-title">GET IN TOUCH</h3>
-                <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                <div class="contact-method">
-                  <div class="contact-method__item"><i class="fas fa-map-marker-alt"></i>
-                    <p>5 South Main Street Los Angeles, ZZ-96110 USA</p>
-                  </div>
-                  <div class="contact-method__item"><i class="fas fa-mobile-alt"></i>
-                    <p>125-711-811   |   125-668-886</p>
-                  </div>
-                  <div class="contact-method__item"><i class="fas fa-headphones-alt"></i>
-                    <p>Support.hosting@gmail.com</p>
-                  </div>
+        <div class="cart">
+          <div class="cart__table">
+            <table>
+              <colgroup>
+                <col span="1" style="width: 50%;"/>
+                <col span="1" style="width: 15%;"/>
+                <col span="1" style="width: 15%;"/>
+                <col span="1" style="width: 15%;"/>
+                <col span="1" style="width: 5%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>PRODUCT</th>
+                  <th>PRICE</th>
+                  <th>QUATILITY</th>
+                  <th>TOTAL</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="cart-product"><img src="assets/images/pages/cart/1.png" alt="Furry hooded parka"/>
+                      <div class="cart-product__content">
+                        <h5>Furry hooded parka</h5>
+                        <div class="star" data-number="4"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>$ 15</td>
+                  <td>
+                    <div class="quantity-controller"><a class="decrease-btn" href="#">-</a>
+                      <input class="result" type="text" readonly="readonly" value="01"/><a class="increase-btn" href="#">+</a>
+                    </div>
+                  </td>
+                  <td>$ 15</td>
+                  <td><a href="javascript:void(0)"><i class="fas fa-times"></i></a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cart-product"><img src="assets/images/pages/cart/2.png" alt="Furry hooded parka"/>
+                      <div class="cart-product__content">
+                        <h5>Furry hooded parka</h5>
+                        <div class="star" data-number="4"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>$ 18</td>
+                  <td>
+                    <div class="quantity-controller"><a class="decrease-btn" href="#">-</a>
+                      <input class="result" type="text" readonly="readonly" value="01"/><a class="increase-btn" href="#">+</a>
+                    </div>
+                  </td>
+                  <td>$ 18</td>
+                  <td><a href="javascript:void(0)"><i class="fas fa-times"></i></a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cart-product"><img src="assets/images/pages/cart/3.png" alt="Furry hooded parka"/>
+                      <div class="cart-product__content">
+                        <h5>Furry hooded parka</h5>
+                        <div class="star" data-number="4"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>$ 25</td>
+                  <td>
+                    <div class="quantity-controller"><a class="decrease-btn" href="#">-</a>
+                      <input class="result" type="text" readonly="readonly" value="01"/><a class="increase-btn" href="#">+</a>
+                    </div>
+                  </td>
+                  <td>$ 25</td>
+                  <td><a href="javascript:void(0)"><i class="fas fa-times"></i></a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cart-product"><img src="assets/images/pages/cart/4.png" alt="Furry hooded parka"/>
+                      <div class="cart-product__content">
+                        <h5>Furry hooded parka</h5>
+                        <div class="star" data-number="4"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>$ 22</td>
+                  <td>
+                    <div class="quantity-controller"><a class="decrease-btn" href="#">-</a>
+                      <input class="result" type="text" readonly="readonly" value="01"/><a class="increase-btn" href="#">+</a>
+                    </div>
+                  </td>
+                  <td>$ 22</td>
+                  <td><a href="javascript:void(0)"><i class="fas fa-times"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cart__footer">
+            <div class="cart__footer__actions"><a class="btn -light-overlay" href="shop.html">CONTINUE SHOPPING</a><a class="btn -light-overlay" href="shop.html">Upadte cart</a></div>
+          </div>
+          <div class="cart__total">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-8 col-lg-7">
+                <div class="cart__total__discount">
+                  <form action="/">
+                    <h3>DISCOUNT CODES</h3>
+                    <input type="text" name="discount" placeholder="Enter your coupon code"/>
+                    <button class="btn">Apply</button>
+                  </form>
                 </div>
               </div>
-              <div class="contact-us__social">
-                <h3 class="contact-title">GET IN TOUCH</h3>
-                <div class="social-block"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-dribbble"></i></a></div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="contact-us__form">
-                <h3 class="contact-title">LEAVE A MESSAGE</h3>
-                <form action="/">
-                  <input type="text" placeholder="Name" name="name"/>
-                  <input type="email" placeholder="Email" name="email"/>
-                  <input type="text" placeholder="Website" name="website"/>
-                  <textarea name="message" cols="30" rows="8" placeholder="Message"></textarea>
-                  <button class="btn -normal">Send message</button>
-                </form>
+              <div class="col-12 col-md-4">
+                <div class="cart__total__content">
+                  <h3>Cart total</h3>
+                  <div class="total__row">
+                    <h5>Subtotal</h5>
+                    <h5>$ 152.0</h5>
+                  </div>
+                  <div class="total__row">
+                    <h5>Subtotal</h5>
+                    <h5>$ 152.0</h5>
+                  </div><a class="btn" href="checkout.html">PPROCEED TO CHECKOUT</a>
+                </div>
               </div>
             </div>
           </div>
