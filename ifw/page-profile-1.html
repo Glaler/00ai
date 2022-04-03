@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-pages" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="pb-4">
+            <div class="divider mb-4"></div>
+            <div class="d-flex content mt-0 mb-1">
+                <!-- right side of profile. increase image width to increase column size-->
+                <div>
+                    <img src="images/empty.png" data-src="images/preload-logo.png" width="85" class="rounded-circle me-3 shadow-xl preload-img">
+                </div>
+                <!-- left side of profile -->
+                <div class="flex-grow-1">
+                    <h2>Enabled.Labs<i class="fa fa-check-circle color-blue-dark font-16 ms-3"></i></h2>
+                    <a href="#" class="mt-3 btn btn-xs font-600 btn-border border-highlight color-highlight">Message</a>
+                    <a href="#" data-menu="menu-follow" class="mt-3 ms-2 btn btn-xs font-600 btn-border border-highlight color-highlight">
+                        <i class="fa fa-user"></i><i class="ms-2 font-11 fa fa-check"></i>
+                    </a>
+                </div>            
+            </div>
+            
+            <div class="content">
+                <h3 class="font-700">Enabled</h3>
+                <p class="mb-n3">Mauris consequat mi vel felis pharetra ornare. Praesent facilisis arcu orci, non tempor nisl interdum et. Nunc volutpat facilisis metus, sit amet placerat nulla.</p><br>
+                <a href="#" class="font-600 color-highlight">@iEnabled</a><br>
+                <a href="#" class="font-600 color-highlight">https://enableds.com</a>
+                <p class="opacity-60 font-12 pt-2">Followed by <a href="#" class="color-theme font-600">@Envato</a>, <a href="#" class="color-theme font-600">@EnvatoMarket</a>, <a href="#" class="color-theme font-600">@ThemeForest</a> +324 more</p>
+            </div>
+            <div class="splide story-slider slider-no-dots mb-4" id="story-slider">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide text-center"><a data-menu="menu-story" href="#"><img src="images/pictures/1s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">PWA</span></a></div>
+                        <div class="splide__slide text-center"><a data-menu="menu-story" href="#"><img src="images/pictures/3s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Mobile</span></a></div>
+                        <div class="splide__slide text-center"><a data-menu="menu-story" href="#"><img src="images/pictures/5s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Bootstrap</span></a></div>
+                        <div class="splide__slide text-center"><a data-menu="menu-story" href="#"><img src="images/pictures/2s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Dark</span></a></div>
+                        <div class="splide__slide text-center"><a data-menu="menu-story" href="#"><img src="images/pictures/6s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Flexbile</span></a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- follow buttons-->
+            <div class="divider mb-2"></div>
+            <div class="row mb-2 text-center">
+                <div class="col-4">
+                    <h6 class="mb-0 color-theme">1,702</h6>
+                    posts
+                </div>
+                <div class="col-4">
+                    <h6 class="mb-0 color-theme">1,8m</h6>
+                    followers
+                </div>
+                <div class="col-4">
+                    <h6 class="mb-0 color-theme">385</h6>
+                    following
+                </div>
+            </div>
+            <div class="divider mb-3"></div>
+
+
+            <div class="d-flex">
+                <div>
+                    <a href="images/pictures/1l.jpg" title="Flexibility Unmatched" data-gallery="gallery">
+                        <img src="images/pictures/1t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+                <div>
+                    <a href="images/pictures/2l.jpg" title="Crazy Hair" data-gallery="gallery">
+                        <img src="images/pictures/2t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+                <div>
+                    <a href="images/pictures/3l.jpg" title="Neon Lights" data-gallery="gallery">
+                        <img src="images/pictures/3t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>   
+            </div>
+            <div class="d-flex">
+                <div>
+                    <a href="images/pictures/4l.jpg" title="Neon Glass" data-gallery="gallery">
+                        <img src="images/pictures/4t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+                <div>
+                    <a href="images/pictures/5l.jpg" title="Eyeglass Trend" data-gallery="gallery">
+                        <img src="images/pictures/5t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+                <div>
+                    <a href="images/pictures/6l.jpg" title="Screaming Music" data-gallery="gallery">
+                        <img src="images/pictures/6t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+            </div>
+            <div class="d-flex">
+                <div>
+                    <a href="images/pictures/9l.jpg" title="Modern Phone" data-gallery="gallery">
+                        <img src="images/pictures/9t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+                <div>
+                    <a href="images/pictures/5l.jpg" title="Profile Style" data-gallery="gallery">
+                        <img src="images/pictures/5t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+                <div>
+                    <a href="images/pictures/3l.jpg" title="Red Lights" data-gallery="gallery">
+                        <img src="images/pictures/3t.jpg" class="img-fluid border border-transparent">
+                    </a>
+                </div>                 
+            </div>
+        </div>
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+    <!-- Story Menu -->
+    <div id="menu-story" 
+         class="menu menu-box-modal bg-dark-dark" 
+         data-menu-width="cover"
+         data-menu-height="cover">
+         <h1 class="color-white font-18 ms-3 mt-3 font-500">
+             <img src="images/pictures/6s.jpg" width="30" class="rounded-xl me-2 mt-n1">
+             Jane Louder
+             <a href="#" class="close-menu float-end me-3 mt-0 color-white font-20"><i class="fa fa-times"></i></a>
+        </h1>
+        <div class="card bg-6 rounded-0 mb-0 mt-3" data-card-height="cover">
+            <div class="card-center text-center">
+                <h1 class="color-white mb-3 font-50 text-uppercase font-900">Create</h1>
+                <h1 class="color-white mb-3 font-38 text-uppercase font-900">Awesome</h1>
+                <h1 class="color-white mb-0 font-48 text-uppercase font-900">Stories</h1>
+                <p class="color-white boxed-text-l font-16 mt-4">
+                    Simulate Stories with ease. It's a great and super easy to use feature.
+                </p>
+                <a href="#" class="btn btn-center-s rounded-s close-menu btn-m font-13 border-gray-light font-700 text-uppercase color-white">Awesome</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div>
+    </div>
+        
+    <!-- Follow Menu -->
+    <div id="menu-follow" 
+         class="menu menu-box-modal rounded-0" 
+         data-menu-width="300"
+         data-menu-height="380">
+        
+        <div class="text-center">
+            <img src="images/pictures/6t.jpg" width="150" class="mx-auto mt-4 rounded-circle">
+            <p class="text-center font-15 mt-4">Unfollow @jane.louder84?</p>
+            <div class="divider mb-0"></div>
+            <a href="#" class="color-red-dark font-15 font-600 text-center py-3 d-block">Unfollow</a>
+            <div class="divider mb-0"></div>
+            <a href="#" class="close-menu color-theme font-15 text-center py-3 d-block">Cancel</a>
+        </div>
+    </div>
+
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

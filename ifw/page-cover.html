@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-pages" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card rounded-0 bg-3" data-card-height="cover">
+                            <div class="card-center">
+                                <h1 class="color-white text-center font-50">BARS</h1>
+                                <p class="text-center font-16 color-white">Reliable and Flexible</p>
+                                <div class="divider divider-small bg-red-dark"></div>
+                                <p class="text-center color-white boxed-text-xl mt-4">
+                                    Bars is a Bootstrap Mobile PWA KIt that allows you to seemlessly create fast and elegant pages with the use of flexible copy & paste components.
+                                </p>
+                                <a href="#" class="btn btn-center-m bg-red-dark btn-m font-700 text-uppercase">Get Started</a>
+                            </div>
+                            <div class="card-overlay bg-black opacity-80"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card rounded-0 bg-1" data-card-height="cover">
+                            <div class="card-bottom pb-4 px-4">
+                                <h1 class="color-white font-24">Captions Rock</h1>
+                                <p class="color-white">
+                                    The coverpage slider is designed to be intuitive and easy to use. Creating new slides is as easy as copy & paste.
+                                </p>
+                                <a href="#" class="btn bg-blue-dark btn-m font-700 text-uppercase">Find out More</a>
+                            </div>
+                            <div class="card-overlay bg-black opacity-80"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card rounded-0 bg-4" data-card-height="cover">
+                            <div class="card-bottom pb-4 px-4">
+                                <i class="fa fa-cog color-yellow-dark fa-5x fa-spin mb-4"></i>
+                                <h1 class="color-white font-30 ">Hello Icons</h1>
+                                <p class="color-white">
+                                    The coverpage slider is designed to be intuitive and easy to use. Creating new slides is as easy as copy & paste.
+                                </p>
+                                <a href="#" class="btn bg-yellow-dark btn-m font-700 text-uppercase">Find out More</a>
+                            </div>
+                            <div class="card-overlay bg-black opacity-85"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card rounded-0 bg-7" data-card-height="cover">
+                            <div class="card-center pb-4 px-4">
+                                <h1 class="color-white font-25 mb-0">Find Your</h1>
+                                <h1 class="color-white font-47 mb-4">Style</h1>
+                                <p class="color-white">
+                                    Reusable components make<br> it
+                                    easy as a vacation morning!
+                                </p>
+                                <a href="#" class="btn bg-green-dark btn-m font-700 text-uppercase">Get Started</a>
+                            </div>
+                            <div class="card-overlay bg-black opacity-85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="index.html" class="header-title">Bars</a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" data-menu="menu-account" class="header-icon header-icon-2"><i class="fa fa-user-circle font-14"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-welcome" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    <div id="menu-account" data-menu-load="menu-account.html" class="menu menu-box-bottom" data-menu-height="265" data-menu-effect="menu-parallax"></div> 
+
+    <div class="page-content header-clear">                
+        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card rounded-0 mb-3 bg-12" data-card-height="300">
+                            <div class="card-bottom text-center">
+                                <h1 class="color-white mb-0">Meet Bars</h1>
+                                <p class="color-white opacity-70 font-400 mb-3 pb-1">
+                                    A Professional and fast loading <br>Mobile PWA Kit to suit all your needs.
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-gradient-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card rounded-0 mb-3 bg-1" data-card-height="300">
+                            <div class="card-bottom text-center">
+                                <h1 class="color-white mb-0">Bars is Fast</h1>
+                                <p class="color-white opacity-70 font-400 mb-3 pb-1">
+                                    Bars runs smooth like butter! <br> Fast loading, flexible, and very easy to use
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-gradient-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card rounded-0 mb-3 bg-5" data-card-height="300">
+                            <div class="card-bottom text-center">
+                                <h1 class="color-white mb-0">Easy Code</h1>
+                                <p class="color-white opacity-70 font-400 mb-3 pb-1">
+                                    Coded in simple familiar code. <br> Editing is fast, options are endless.
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-gradient-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex mt-n3 py-1">
+            <div class="m-auto"><a href="#" class="font-13 color-theme"><i class="fa fa-phone font-11 pe-2 py-3 color-green-dark"></i>Call</a></div>
+            <div class="m-auto"><a href="#" class="font-13 color-theme"><i class="fa fa-comment font-12 pe-2 py-3 color-teal-dark"></i>SMS</a></div>
+            <div class="m-auto"><a href="#" class="font-13 color-theme"><i class="fa fa-envelope font-12 pe-2 py-3 color-blue-dark"></i>Mail</a></div>
+        </div>
+        <div class="divider"></div>
+        
+        <div class="content">
+            <h1 class="text-center">Bars Mobile PWA</h1>
+            <p class="font-11 mt-n1 text-center mt-n2">Fluidity in Motion. Seed and Flexibility</p>
+            <div class="divider-icon divider-margins"><i class="fa font-24 color-red-dark fa-heart"></i></div>
+            <p class="boxed-text-xl mt-n3">
+                Simple, powerful Mobile Template designed to look amazing, be fast, and be incredibly easy to use.
+            </p>
+            <a href="#" class="btn btn-sm rounded-s text-uppercase font-800 btn-center-m bg-blue-dark">Learn More</a>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="content">
+            <div class="d-flex mb-4">
+                <div class="pe-3 me-1">
+                    <img src="images/pictures/1s.jpg" class="rounded-s" width="100">
+                </div>
+                <div class="me-auto">
+                    <h4>Familiar Code</h4>
+                    <p>
+                        We build powerful code that works for you, to make things smooth, fast and easy to use.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex mb-4">
+                <div class="pe-3 me-1">
+                    <img src="images/pictures/12s.jpg" class="rounded-s" width="100">
+                </div>
+                <div class="me-auto">
+                    <h4>Fast Loading</h4>
+                    <p class="mb-0">
+                        Mobile PWA's must be fast! We build items for speed, reliabilit and user friendliness!
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex mb-4">
+                <div class="pe-3 me-1">
+                    <img src="images/pictures/5s.jpg" class="rounded-s" width="100">
+                </div>
+                <div class="me-auto">
+                    <h4>Built for you!</h4>
+                    <p class="mb-0">
+                        Built with special care to code details and a very friendly and rich documentation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="content">
+            <h1 class="text-center">Packed For You</h1>
+            <p class="font-11 mt-n1 text-center mt-n2">Fluidity in Motion. Seed and Flexibility</p>
+            <div class="divider-icon divider-margins"><i class="fa font-26 color-blue-dark fa-smile"></i></div>
+            <p class="boxed-text-xl mt-n3">
+                Simple, powerful Mobile Template designed to look amazing, be fast, and be incredibly easy to use.
+            </p>
+        </div>
+
+        
+        <div class="row px-4">
+            <div class="col-6 p-0 text-center">
+                <img src="images/pictures/12s.jpg" class="rounded-s" width="120">
+                <h4 class="pt-3 mb-0">Best Support</h4>
+                <p>
+                    We're always here for you. <br> That's an absolute fact.
+                </p>
+            </div>
+            <div class="col-6 p-0 text-center">
+                <img src="images/pictures/5s.jpg" class="rounded-s" width="120">
+                <h4 class="pt-3 mb-0">Packed with Care</h4>
+                <p>
+                    Proper Documentations<br> Easy and Flexible Code
+                </p>
+            </div>
+            <div class="col-6 p-0 text-center">
+                <img src="images/pictures/1s.jpg" class="rounded-s" width="120">
+                <h4 class="pt-3 mb-0">Top Quality</h4>
+                <p>
+                    We value each and every <br> customer. You rock!
+                </p>
+            </div>
+            <div class="col-6 p-0 text-center">
+                <img src="images/pictures/5s.jpg" class="rounded-s" width="120">
+                <h4 class="pt-3 mb-0">Built for You</h4>
+                <p>
+                    We stand by you<br>You deserve the best!
+                </p>
+            </div>
+            <div class="col-12">
+                <a href="#" class="btn btn-sm rounded-s text-uppercase font-800 btn-full btn-borders border-blue-dark color-blue-dark">Find out  More</a>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>        
+        
+        <div class="card bg-12" data-card-height="560">
+            <div class="card-center text-center">
+                <h1 class="color-white font-26">Lightning Fast</h1>
+                <p class="mt-n2 color-white font-12 opacity-50 mb-3">Behind the Scenes, our Code works for You!</p>
+                <p class="boxed-text-l color-white opacit-50 mb-5">
+                    Built with the best code optimization techniques to assure a fast loading product that works for you
+                </p>
+                
+                <div class="content mx-4 mb-0">
+                    <div class="mb-4">
+                        <h5 class="float-start color-white font-15">Enabled Products</h5>
+                        <h5 class="float-end color-white font-11 opacity-50 font-400">via GTMetrix</h5>
+                        <div class="clearfix"></div>
+                        <div class="progress rounded-xl " style="height:27px;">
+                            <div class="progress-bar rounded-xl border-0 font-11 bg-green-dark color-white text-start ps-2" 
+                                 role="progressbar" style="width: 95%" 
+                                 aria-valuenow="10" aria-valuemin="0" 
+                                 aria-valuemax="100">
+                                 A - Best Score
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="float-start color-white font-15">Framework 7 Products</h5>
+                        <h5 class="float-end color-white font-11 opacity-50 font-400">via GTMetrix</h5>
+                        <div class="clearfix"></div>
+                        <div class="progress rounded-xl " style="height:27px;">
+                            <div class="progress-bar rounded-xl border-0 font-11 bg-yellow-dark color-white text-start ps-2" 
+                                 role="progressbar" style="width: 70%" 
+                                 aria-valuenow="10" aria-valuemin="0" 
+                                 aria-valuemax="100">
+                                 C - Decent Score
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-0">
+                        <h5 class="float-start color-white font-15">jQuery Mobile Products</h5>
+                        <h5 class="float-end color-white font-11 opacity-50 font-400">via GTMetrix</h5>
+                        <div class="clearfix"></div>
+                        <div class="progress rounded-xl " style="height:27px;">
+                            <div class="progress-bar rounded-xl border-0 font-11 bg-red-dark color-white text-start ps-2" 
+                                 role="progressbar" style="width: 45%" 
+                                 aria-valuenow="10" aria-valuemin="0" 
+                                 aria-valuemax="100">
+                                 D -  Bad Score
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="color-white font-11 opacity-80 pt-5">We're here to help you optimize your page.</p>
+                </div>
+
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+                
+        
+        
+        <div class="content">
+            <h1 class="text-center">Featured Projects</h1>
+            <p class="font-11 mt-n1 text-center mt-n2">Our Staff are Here to Help You</p>
+            <div class="divider-icon divider-margins"><i class="fa font-26 color-brown-dark fa-camera"></i></div>
+            <p class="boxed-text-xl mt-n3">
+                Simple, powerful Mobile Template designed to look amazing, be fast, and be incredibly easy to use.
+            </p>
+                        
+            <div class="row">
+                <div class="col-4">
+                    <a href="images/pictures/1t.jpg" data-gallery="gallery-1" class="filtr-item" title="Cream Pie" data-category="1">
+                        <img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-s shadow-m" alt="Picture Description">
+                        <h5 class="font-14 pt-2 pb-1 line-height-s">Decorations on your wall</h5>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="images/pictures/2t.jpg" data-gallery="gallery-1" class="filtr-item" title="Pots and Recipes" data-category="3">
+                        <img src="images/empty.png" data-src="images/pictures/2s.jpg" class="preload-img img-fluid rounded-s shadow-m" alt="Picture Description">
+                        <h5 class="font-14 pt-2 pb-1 line-height-s">Some fresh fruit slices</h5>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="images/pictures/3t.jpg" data-gallery="gallery-1" class="filtr-item" title="Pots and Recipes" data-category="2">
+                        <img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-s shadow-m" alt="Picture Description">
+                        <h5 class="font-14 pt-2 pb-1 line-height-s">Wodden Light Bulbs</h5>
+                    </a>
+                </div>
+                <div class="col-12 mb-3"></div>
+                <div class="col-4">
+                    <a href="images/pictures/4t.jpg" data-gallery="gallery-2" class="filtr-item" title="Typeweritter and Vynil" data-category="1">
+                        <img src="images/empty.png" data-src="images/pictures/4s.jpg" class="preload-img img-fluid rounded-s shadow-m" alt="Picture Description">
+                        <h5 class="font-14 pt-2 pb-1 line-height-s">Photograph on envelope</h5>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="images/pictures/5t.jpg" data-gallery="gallery-2" class="filtr-item" title="Beautiful Camera" data-category="3">
+                        <img src="images/empty.png" data-src="images/pictures/5s.jpg" class="preload-img img-fluid rounded-s shadow-m" alt="Picture Description">
+                        <h5 class="font-14 pt-2 pb-1 line-height-s">Some tickets in purse</h5>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="images/pictures/6t.jpg" data-gallery="gallery-3" class="filtr-item" title="Cookies and Flowers" data-category="2">
+                        <img src="images/empty.png" data-src="images/pictures/6s.jpg" class="preload-img img-fluid rounded-s shadow-m" alt="Picture Description">
+                        <h5 class="font-14 pt-2 pb-1 line-height-s">Color match your outfit</h5>
+                    </a>
+                </div>
+            </div>            
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h1 class="text-center">Testimonials</h1>
+            <p class="font-11 mt-n1 text-center mt-n2">What our Customers Are Saying</p>
+            <div class="divider-icon divider-margins"><i class="fa font-26 color-red-dark fa-quote-right"></i></div>
+                        
+            <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-2">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide mx-4">
+                            <h5 class="text-center font-20 font-300 line-height-xl opacity-70">
+                                The code is always great with any Enabled template, but it's the customer support that wins me over always.
+                                <br>
+                                <div class="pb-3"></div>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                            </h5>
+                        </div>
+                        <div class="splide__slide mx-4">
+                            <h5 class="text-center font-20 font-300 line-height-xl opacity-70">
+                                The best support I have ever had, it's so good I purchased another theme. Highlighy Recommended.
+                                <br>
+                                <div class="pb-3"></div>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                            </h5>
+                        </div>
+                        <div class="splide__slide mx-4">
+                            <h5 class="text-center font-20 font-300 line-height-xl opacity-70">
+                                The code is always great with any Enabled template, but it's the customer support that wins me over always.
+                                <br>
+                                <div class="pb-3"></div>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                            </h5>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+                
+    </div>
+    
+    <!-- Be sure this is on your main visiting page, for example, the index.html page-->
+    <!-- Install Prompt for Android -->
+    <div id="menu-install-pwa-android" class="menu menu-box-modal"
+        data-menu-height="375" 
+        data-menu-width="320" 
+        data-menu-effect="menu-parallax">
+        <img class="mx-auto mt-4 rounded-m" src="app/icons/icon-128x128.png" alt="img" width="90">
+        <h4 class="text-center mt-4 mb-2">Bars on your Home Screen</h4>
+        <p class="text-center boxed-text-xl">
+            Install Bars on your home screen, and access it just like a regular app. It really is that simple!
+        </p>
+        <div class="boxed-text-l">
+            <a href="#" class="pwa-install mx-auto btn btn-m font-700 bg-highlight text-uppercase">Add to Home Screen</a>
+            <a href="#" class="pwa-dismiss close-menu btn-full mt-3 pt-2 text-center text-uppercase font-600 color-red-light font-12">Maybe later</a>
+        </div>
+    </div>   
+
+    <!-- Install instructions for iOS -->
+    <div id="menu-install-pwa-ios" 
+        class="menu menu-box-modal"
+        data-menu-height="330" 
+        data-menu-width="320" 
+        data-menu-effect="menu-parallax">
+        <div class="boxed-text-xl top-25">
+            <img class="mx-auto mt-4 rounded-m" src="app/icons/icon-128x128.png" alt="img" width="90">
+            <h4 class="text-center mt-4 mb-2">Bars on your Home Screen</h4>
+            <p class="text-center ms-3 me-3 mb-2 pb-2">
+                Install Bars on your home screen, and access it just like a regular app. Open your Safari menu and tap "Add to Home Screen".
+            </p>
+            <a href="#" class="pwa-dismiss close-menu btn-full mt-3 text-center text-uppercase font-900 color-red-light opacity-90 font-110">Maybe later</a>
+        </div>
+    </div>   
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

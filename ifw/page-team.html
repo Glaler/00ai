@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-pages" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="content">
+            <h1 class="text-center">Meet the Team</h1>
+            <p class="font-11 mt-n1 text-center mt-n3">The folkks Behind the Scenes</p>
+            <div class="divider-icon divider-margins"><i class="fa font-26 color-blue-dark fa-users"></i></div>
+            <p class="boxed-text-l">We're here to help and we're happy to meet you! Let us know if we can help, we're always here for you. </p>
+
+            <div class="divider divider-small bg-blue-dark"></div>
+            
+            <div class="row mb-0 mt-5 text-center">
+                <div class="col-6">
+                    <img src="images/pictures/1t.jpg" class="img-fluid rounded-sm mb-3">
+                    <h1 class="font-24 font-800 mb-n2">John Doe</h1>
+                    <p class="font-11 color-highlight mb-2">Company Executive Officer</p>
+                    <p class="mb-3">
+                        The manager and project executive. Always on top of projects with strict deadlines always followed.
+                    </p>
+                    <a href="#" class="icon icon-xs bg-facebook rounded-s"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon icon-xs bg-phone mx-2 rounded-s"><i class="fa fa-phone"></i></a>
+                    <a href="#" class="icon icon-xs bg-twitter rounded-s"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-6">
+                    <img src="images/pictures/2t.jpg" class="img-fluid rounded-sm mb-3">
+                    <h1 class="font-24 font-800 mb-n2">Jack Sir</h1>
+                    <p class="font-11 color-highlight mb-2">Company Executive Officer</p>
+                    <p class="mb-3">
+                        The manager and project executive. Always on top of projects with strict deadlines always followed.
+                    </p>
+                    <a href="#" class="icon icon-xs bg-facebook rounded-s"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon icon-xs bg-phone mx-2 rounded-s"><i class="fa fa-phone"></i></a>
+                    <a href="#" class="icon icon-xs bg-twitter rounded-s"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <div class="col-12"><div class="divider mt-4"></div></div>
+                
+                <div class="col-4">
+                    <img src="images/pictures/8s.jpg" class="img-fluid rounded-sm mb-3">
+                    <h1 class="font-17 font-5000 mb-n2">John Doe</h1>
+                    <p class="font-11 color-highlight mb-2">Support Staff</p>
+                    <a href="#" class="icon icon-xxs bg-facebook rounded-s"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon icon-xxs bg-instagram mx-1 rounded-s"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon icon-xxs bg-twitter rounded-s"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-4">
+                    <img src="images/pictures/6t.jpg" class="img-fluid rounded-sm mb-3">
+                    <h1 class="font-17 font-5000 mb-n2">Jack Sir</h1>
+                    <p class="font-11 color-highlight mb-2">Support Staff</p>
+                    <a href="#" class="icon icon-xxs bg-facebook rounded-s"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon icon-xxs bg-instagram mx-1 rounded-s"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon icon-xxs bg-twitter rounded-s"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-4">
+                    <img src="images/pictures/5t.jpg" class="img-fluid rounded-sm mb-3">
+                    <h1 class="font-17 font-5000 mb-n2">Joe Mate</h1>
+                    <p class="font-11 color-highlight mb-2">Support Staff</p>
+                    <a href="#" class="icon icon-xxs bg-facebook rounded-s"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon icon-xxs bg-instagram mx-1 rounded-s"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon icon-xxs bg-twitter rounded-s"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

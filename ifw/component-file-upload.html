@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="content">
+            <p>
+                You can use the input type file to upload files and apply your back-end logic to them. For this example, we used
+                a simple image, where the properties and image will be displayed when uploading. We do not keep any images on our srvers. 
+            </p>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <h3 class="font-700">Upload Here</h3>
+            <p>
+                Upload an image and get all the data inside it placed nicely and with a preview of the image above it all.
+            </p>
+            <div class="file-data pb-5">
+                <input type="file" id="file-upload" class="upload-file bg-highlight shadow-s rounded-s " accept="image/*">
+                <p class="upload-file-text color-white">Upload Image</p>
+            </div>
+            <div class="list-group list-custom-large upload-file-data disabled">
+                <img id="image-data" src="images/empty.png" class="img-fluid" style="width:auto; height:auto;">
+                <a href="#" class="border-0">
+                    <i class="fa font-14 fa-info-circle color-blue-dark"></i>
+                    <span>File Name</span>
+                    <strong class="upload-file-name">JS Populated</strong>
+                </a>        
+                <a href="#" class="border-0">
+                    <i class="fa font-14 fa-weight-hanging color-brown-dark"></i>
+                    <span>File Size</span>
+                    <strong class="upload-file-size">JS Populated</strong>
+                </a>        
+                <a href="#" class="border-0">
+                    <i class="fa font-14 fa-tag color-red-dark"></i>
+                    <span>File Type</span>
+                    <strong class="upload-file-type">JS Populated</strong>
+                </a>        
+                <a href="#" class="border-0 pb-4">
+                    <i class="fa font-14 fa-clock color-blue-dark"></i>
+                    <span>Modified Date</span>
+                    <strong class="upload-file-modified">JS Populated</strong>
+                </a>        
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+            
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-pages" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        <div class="content">
+            <h1 class="text-center">Join Our Team</h1>
+            <p class="font-11 mt-n1 text-center mt-n2">What our Customers Are Saying</p>
+            <div class="divider-icon divider-margins"><i class="fa font-26 color-blue-dark fa-handshake"></i></div>
+            <p class="boxed-text-l">We're looking for new talent to join our team. Join the dark side! We have milk and cookies! </p>
+            <div class="row px-4">
+                <div class="col-6 p-0">
+                    <a href="#" class="btn btn-center-m bg-highlight btn-m text-uppercase font-800">Call Now</a>
+                </div>
+                <div class="col-6 p-0">
+                    <a href="#" class="btn btn-center-m border-highlight color-highlight btn-m text-uppercase font-800">View Jobs</a>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="job">
+                <div class="d-flex">
+                    <div class="align-self-center me-auto">
+                        <h4 class="mb-0">Front End Developer</h4>
+                        <i class="fa fa-map-pin color-red-dark pe-2 font-10"></i><span class="font-11">Australia, Melbourne</span>
+                        <i class="fa fa-clock color-green-dark pe-2 ps-3 font-10"></i><span class="font-11">Full Time</span>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <a href="#" class="btn btn-sm bg-highlight rounded-xs text-uppercase font-700">Apply</a>
+                    </div>
+                </div>
+                <p class="pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eget nisl quis molestie.
+                    Cras vestibulum consectetur semper. 
+                </p>
+            </div>
+            
+            <div class="divider mt-4"></div>
+            
+            <div class="job">
+                <div class="d-flex">
+                    <div class="align-self-center me-auto">
+                        <h4 class="mb-0">Back End Developer</h4>
+                        <i class="fa fa-map-pin color-red-dark pe-2 font-10"></i><span class="font-11">Australia, Melbourne</span>
+                        <i class="fa fa-clock color-green-dark pe-2 ps-3 font-10"></i><span class="font-11">Full Time</span>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <a href="#" class="btn btn-sm bg-highlight rounded-xs text-uppercase font-700">Apply</a>
+                    </div>
+                </div>
+                <p class="pt-2 mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eget nisl quis molestie.
+                    Cras vestibulum consectetur semper. 
+                </p>
+            </div>
+            
+            <div class="divider mt-4"></div>
+            
+            <div class="job bg-blue-dark mx-n3 py-4">
+                <div class="d-flex px-3">
+                    <div class="align-self-center me-auto">
+                        <h4 class="mb-0 color-white">Company Technical Officer</h4>
+                        <i class="fa fa-map-pin color-white pe-2 font-10"></i><span class="font-11 opacity-40">Australia, Melbourne</span>
+                        <i class="fa fa-clock color-white pe-2 ps-3 font-10"></i><span class="font-11 opacity-40">Full Time</span>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <a href="#" class="btn btn-sm bg-white color-black rounded-xs text-uppercase font-700">Apply</a>
+                    </div>
+                </div>
+                <p class="color-white px-3 pt-2 mb-0 opacity-70">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eget nisl quis molestie.
+                    Cras vestibulum consectetur semper. 
+                </p>
+            </div>
+            
+            <div class="divider mt-4"></div>
+            
+            <div class="job">
+                <div class="d-flex">
+                    <div class="align-self-center me-auto">
+                        <h4 class="mb-0">Social Media Marketing</h4>
+                        <i class="fa fa-map-pin color-red-dark pe-2 font-10"></i><span class="font-11">Australia, Melbourne</span>
+                        <i class="fa fa-clock color-green-dark pe-2 ps-3 font-10"></i><span class="font-11">Full Time</span>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <a href="#" class="btn btn-sm bg-highlight rounded-xs text-uppercase font-700">Apply</a>
+                    </div>
+                </div>
+                <p class="pt-2 mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eget nisl quis molestie.
+                    Cras vestibulum consectetur semper. 
+                </p>
+            </div>
+            
+            <div class="divider mt-4"></div>
+            
+            <div class="d-flex">
+                <div>
+                    <h4>See all our Available Listings</h4>
+                    <p class="mb-0">
+                        The perfect job is out there searching for you. Just check out this huge list available for you. Browse and you shall find
+                    </p>
+                </div>
+                <div class="align-self-center ms-auto ps-5">
+                    <i class="fab fa-linkedin color-linkedin fa-4x"></i>
+                </div>
+            </div>
+            <a href="#" class="default-link btn btn-full bg-linkedin mt-4 btn-m text-uppercase font-700">View Listings on LinkedIn</a>
+
+        </div>
+
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

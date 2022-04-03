@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-media" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+        
+        <a href="images/pictures/1.jpg" class="card m-0 mb-1 bg-1" data-card-height="200" data-gallery="gallery-wide" title="Your Image Title Here">
+            <div class="card-center px-3">
+                <h1 class="color-white font-700 mb-n2">Office Design</h1>
+                <p class="color-white opacity-50 mb-3">Enjoy a minimalist plate.</p>
+            </div>
+            <div class="card-center">
+                <i class="fa fa-home color-white d-block text-end pe-4 fa-3x mt-n2"></i>
+            </div>
+            <div class="card-overlay bg-black opacity-90"></div>
+        </a>
+        <a href="images/pictures/11.jpg" class="card m-0 mb-1 bg-11" data-card-height="200" data-gallery="gallery-wide" title="Your Image Title Here">
+            <div class="card-center text-end px-3">
+                <h1 class="color-white font-700 mb-n2 font-">Take a Break</h1>
+                <p class="color-white opacity-50 mb-3">Sit down and plan your day.</p>
+            </div>
+            <div class="card-center">
+                <i class="fa fa-laptop color-gray-light d-block text-start ps-4 font-30 mt-n2"></i>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </a>
+        <a href="images/pictures/7.jpg" class="card m-0 mb-1 bg-7" data-card-height="200" data-gallery="gallery-wide" title="Your Image Title Here">
+            <div class="card-bottom text-center px-3">
+                <h1 class="color-white font-700 mb-n2">Holidays</h1>
+                <p class="color-white opacity-50 mb-3">Enoy your Vacation</p>
+            </div>
+            <div class="card-top">
+                <i class="fa fa-heart color-red-dark d-block text-center pt-4 fa-4x"></i>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </a>
+        <a href="images/pictures/3.jpg" class="card m-0 mb-1 bg-3" data-card-height="200" data-gallery="gallery-wide" title="Your Image Title Here">
+            <div class="card-bottom text-start px-3">
+                <h1 class="color-white font-700 mb-n2">Memories</h1>
+                <p class="color-white opacity-50 mb-3">Are always best in your hand</p>
+            </div>
+            <div class="card-top">
+                <i class="fa fa-camera color-green-dark d-block ps-3 pt-4 fa-4x"></i>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </a>
+        <a href="images/pictures/4.jpg" class="card m-0 mb-2 bg-12" data-card-height="200" data-gallery="gallery-wide" title="Your Image Title Here">
+            <div class="card-bottom text-end px-3">
+                <h1 class="color-white font-700 mb-n2">Coffe Breaks</h1>
+                <p class="color-white opacity-50 mb-3">The power of any programmer.</p>
+            </div>
+            <div class="card-top">
+                <i class="fa fa-coffee color-brown-dark d-block text-end pe-3 pt-4 fa-3x"></i>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </a>
+
+        
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

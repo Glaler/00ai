@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Bars Mobile PWA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">Bars</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <div id="menu-main"  data-menu-active="nav-components" data-menu-load="menu-main.html" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over"></div>
+    
+    <div class="page-content header-clear">                
+        
+         
+        <div class="card bg-1" data-card-height="cover-full">
+            <div class="card-center">
+                <h1 class="text-center color-white font-30 font-800 mt-4 mb-0">The new Wide is Tall</h1>
+                <p class="color-white text-center">Cards on Mobile are Awesome and Trending High</p>
+                <a href="#" class="btn btn-m btn-center-l rounded-sm bg-highlight mb-3 font-800 text-uppercase scale-box">Get Started</a>
+            </div>
+            <div class="card-center mb-1">
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="card bg-11" data-card-height="350">
+            <div class="card-top text-end me-3 mt-1">
+                <p class="color-white opacity-50 font-10">Bootstrap 4 + PWA Ready</p>
+            </div>
+            <div class="card-center ms-3">
+                <h1 class="color-white font-900 font-35 mb-0">FIND</h1>
+                <h1 class="color-white font-900 font-31 mb-n1">YOUR</h1>
+                <h1 class="color-white font-900 font-28">STYLE</h1>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="card bg-8" data-card-height="350">
+            <div class="card-center text-center">
+                <h1 class="color-white font-32">Grab Attention</h1>
+                <p class="color-white boxed-text-l opacity-80 mb-0">
+                    Any position you want. Top, Bottom, Center 
+                    with any type of content you want for cards.
+                </p>
+                <a href="#" class="btn btn-border btn-m font-700 mt-4 bg-white color-black">Call to Action</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+
+        
+        <div class="card  bg-6" data-card-height="450">
+            <div class="card-top">
+                <a href="#" class="btn btn-m bg-white color-black rounded-sm font-800 text-uppercase scale-box float-end mt-2 me-2">Get it Today</a>
+            </div>
+            <div class="card-bottom">
+                <div class="content">
+                    <h1 class="color-white font-28">Creativity Unleashed</h1>
+                    <p class="color-white opacity-70">
+                        Turn your Mobile Website into a Awesome App <br> Styled Design with Asterial in just a couple of  minutes
+                    </p>
+                </div>
+            </div>
+            <div class="card-overlay bg-gradient opacity-70"></div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+         
+        <div class="card bg-1" data-card-height="250">
+            <div class="card-center">
+                <div class="content">
+                    <div class="d-flex">
+                        <div>
+                        <h1 class="color-white font-27 mb-n2">With Icons</h1>
+                        <p class="color-white opacity-70 mb-0">
+                            FontAwesome 5 Ready
+                        </p>
+                        </div>
+                        <div class="ms-auto align-self-center">
+                            <i class="fa fa-heart fa-3x color-red-dark scale-icon me-3"></i>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+
+        <div class="card bg-4" data-card-height="350">
+            <div class="card-top text-start">
+                <div class="mt-3 ms-3 color-white">
+                    <i class="fa fa-angle-left font-30" style="transform:rotate(45deg)"></i><br>Top Left
+                </div>
+            </div>
+            <div class="card-top text-center">
+                <div class="mt-3 color-white">
+                    <i class="fa fa-angle-up font-30"></i><br>Top Center
+                </div>
+            </div>
+            <div class="card-top text-end">
+                <div class="mt-3 me-3 color-white">
+                    <i class="fa fa-angle-right font-30" style="transform:rotate(-45deg)"></i><br>Top Right
+                </div>
+            </div>
+
+            <div class="card-center text-start">
+                <div class="mt-3 ms-3 color-white">
+                    <i class="fa fa-angle-left font-30"></i><br>Center Left
+                </div>
+            </div>
+            <div class="card-center text-center">
+                <div class="mt-3 color-white">
+                    <i class="fa fa-circle font-30"></i><br>Middle
+                </div>
+            </div>
+            <div class="card-center text-end">
+                <div class="mt-3 me-3 color-white">
+                    <i class="fa fa-angle-right font-30"></i><br>Center Right
+                </div>
+            </div>
+
+            <div class="card-bottom text-start">
+                <div class="mb-3 ms-3 color-white">
+                    Bottom Left<br>
+                    <i class="fa fa-angle-left font-30 pt-1" style="transform:rotate(-45deg)"></i>
+                </div>
+            </div>
+            <div class="card-bottom text-center">
+                <div class="mb-3 color-white">
+                    Bottom Center<br>
+                    <i class="fa fa-angle-down font-30 pt-1"></i>
+                </div>
+            </div>
+            <div class="card-bottom text-end">
+                <div class="mb-3 me-3 color-white">
+                    Bottom Right<br>
+                    <i class="fa fa-angle-right pt-1 font-30" style="transform:rotate(45deg)"></i>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+         
+   
+        <div class="footer" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+       
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
